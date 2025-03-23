@@ -1,0 +1,75 @@
+#grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .grid-row {
+    display: flex;
+    margin-bottom: 5px;
+  }
+  
+  .grid-cell {
+    width: 62px;
+    height: 62px;
+    border: 2px solid var(--border-color);
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s;
+  }
+  
+  .grid-cell:hover {
+    border-color: #565758;
+  }
+  
+  .grid-cell.filled {
+    border-color: var(--key-bg);
+  }
+  
+  .grid-cell.correct {
+    background-color: var(--green-color);
+    border-color: var(--green-color);
+    color: white;
+  }
+  
+  .grid-cell.present {
+    background-color: var(--yellow-color);
+    border-color: var(--yellow-color);
+    color: white;
+  }
+  
+  .grid-cell.absent {
+    background-color: var(--key-bg);
+    border-color: var(--key-bg);
+    color: white;
+  }
+  
+  .grid-cell.active {
+    border-color: #565758;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+  }
+  
+  @media (max-width: 500px) {
+    .grid-cell {
+      width: 50px;
+      height: 50px;
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .grid-cell {
+      width: 45px;
+      height: 45px;
+      font-size: 24px;
+      margin: 0 3px;
+    }
+  }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Solver</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/keyboard.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Wordle Solver</h1>
+            <div class="divider"></div>
+        </header>
+        
+        <main>
+            <div id="game-container">
+                <div id="grid-container"></div>
+                
+                <div id="status-container">
+                    <div id="message-display">Enter your Wordle clues</div>
+                    <div id="suggestions-container">
+                        <h3>Top Suggestions</h3>
+                        <ul id="suggestions-list"></ul>
+                    </div>
+                </div>
+                
+                <div id="keyboard-container"></div>
+                
+                <div id="controls">
+                    <button id="reset-btn">Reset</button>
+                    <button id="solve-btn">Solve</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Enter your Wordle clues: Green for correct letters, Yellow for misplaced letters, Gray for incorrect letters</p>
+        </footer>
+    </div>
+
+    <script src="js/grid.js"></script>
+    <script src="js/keyboard.js"></script>
+    <script src="js/solver.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
