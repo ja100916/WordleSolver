@@ -1,7 +1,7 @@
 // Import CSS files so webpack can process them
-import '../css/styles.css';
-import '../css/grid.css';
-import '../css/keyboard.css';
+import '/css/styles.css';
+import '/css/grid.css';
+import '/css/keyboard.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize components
